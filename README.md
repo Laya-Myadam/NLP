@@ -1,6 +1,6 @@
 # NLP
 
-1. 2 different feature-extraction that is text representation techniques have been performed , one is bag-of-words(BOW) and the other one is Frequency-inverse-document-frequency technique(Tf-IDF) and applied them to extract the features.
+1. Used 2 different feature-extraction techniques (text representation techniques) , one is bag-of-words(BOW) and the other one is Frequency-inverse-document-frequency technique(Tf-IDF) and applied them to extract the features.
 2. Performed all the pre-processing techniques like tokenizing all the TweetContents into individual words on the twitter dataset.
 3. we have all the words into lower-case for better analysis of the content and help us to standardize the text and make sure it has consistent representation.
 4. Removed all the stop-words from the tweetContent that is we removed all the common-words which are frequently used like “the”,”an”,”and” and many more which are used frequently but are of not much use and they don’t contribute much to the meaning of text as well. Then we have removed unnecessary punctuations , symbols and also  non-alphanumeric characters. Next, we performed stemming to reduce or bring back the words to their root form. This is mostly useful for the analysis of model.
@@ -15,4 +15,3 @@ The target-variable of tf-idf is assumed to be df_tfidf and for bow it is assume
 10. Built a regression-model and trained it using the tf-idf transformed training-data. Next, we have made predictions like sentiment labels for testing set using the training model. Next we created a result_df data-frame containing all the columns like tweetId, TweetContent, original sentiment and the predicted sentiment for the testing data-set. 
 11. At the end, we have computed and printed the evaluation metrices like accuracy, precision, f1 score and recall values to check and evaluate how well our model’s performance is on the testing dataset. In the end, we have evaluated and predicted the sentiment of tweets.
 12. Finally, Under the comparative-analysis we have performed both bag-of-words technique and tf-idf technique and then found the values of accuracy,precision, f1 score and recall value which will tell us about the overall performance of our model. Then we have created a visual representation of our model’s performance by showing the number of true-positive, true-neagtive,false-positive and false-negative predictions with the help of confusion matrix and printed them.  
-
